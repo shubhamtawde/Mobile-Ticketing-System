@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        tools:context=".HomeActivity">
+
+        <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:drawableLeft="@drawable/ic_library_books"
+                android:fontFamily="@font/montserrat"
+                android:text=" Booking Details"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:padding="20dp"
+                android:src="@drawable/ic_library_books" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="BOOKING DETAILS"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/first"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:layerType="software"
+            android:src="@drawable/dash" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/imageView2"
+            android:fontFamily="@font/montserrat"
+            android:text="Booking Details"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/first"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/account"
+            android:layerType="software"
+            android:src="@drawable/dash" />
+
+
+        <TextView
+            android:id="@+id/source_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Bus Number"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/sr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/source_name"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/dest_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sr1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Route"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dest_name"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/far"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sr2"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Booking ID"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/far"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/fare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ID"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Fare"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fare"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:padding="10dp" />
+        <Button
+            android:id="@+id/gohome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cost"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp"
+            android:layout_margin="25dp"
+            android:text="Go To Home"
+            android:clickable="false"
+            android:drawableLeft="@drawable/ic_home"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</ScrollView>

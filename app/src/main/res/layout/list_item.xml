@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+    android:elevation="90dp"
+    android:layout_margin="25dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/montserrat"
+            android:text="BUS NUMBER"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/title_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Fare"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/title_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Booking ID"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/route"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="Route"
+            android:textColor="#fff" />
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

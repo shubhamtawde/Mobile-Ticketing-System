@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        tools:context=".Bluetooth">
+
+        <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:drawableLeft="@drawable/ic_bluetooth"
+                android:fontFamily="@font/montserrat"
+                android:text=" Bluetooth"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle"
+                android:padding="20dp"
+                android:src="@drawable/ic_bluetooth" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="BLUETOOTH"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn On"
+            android:id="@+id/button"
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="45dp"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:onClick="on" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get visible"
+            android:onClick="visible"
+            android:id="@+id/button2"
+            android:background="@drawable/button"
+            android:layout_alignBottom="@+id/button"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List devices"
+            android:onClick="list"
+            android:id="@+id/button3"
+            android:background="@drawable/button"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/button2"
+            android:layout_alignBottom="@id/button2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="turn off"
+            android:onClick="off"
+            android:id="@+id/button4"
+            android:layout_marginTop="15dp"
+            android:layout_alignLeft="@id/button2"
+            android:layout_below="@+id/button2"
+            android:background="@drawable/button"/>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/textView2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paired devices:"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView2"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/button4"
+            android:layout_alignStart="@+id/listView" />
+
+    </RelativeLayout>
